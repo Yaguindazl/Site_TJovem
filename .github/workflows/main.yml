@@ -1,20 +1,20 @@
-name: primeiro CI
+name: Primeiro CI
 
-on: 
- push:
-   branches: [main]
- pull_request:
-   branches: [main]
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
 
 jobs:
-  mensagem:
-    #criar a maquina virtual
-    runs-on: ubuntu-latest
-    steps:
-      - name: Fazer o git clone
-        uses: action/checkout@v4
+   Mensagem:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Fazer o git clone
+            uses: actions/checkout@v4
 
-      - name: Executando primeiro coamando
-        run: |
-          ls -l
-          echo "fim do PROCESSO"  
+          - name: Executando primeiro comando
+            run: |
+              ls -l
+              echo "Fim do Processo"
